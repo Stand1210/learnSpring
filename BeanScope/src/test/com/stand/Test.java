@@ -28,4 +28,10 @@ public class Test extends AbstractJUnit4SpringContextTests{
         beanScope.say();
     }
 
+
+    @org.junit.Test
+    public void test3()
+    {
+        beanScope.say();
+    }
 }

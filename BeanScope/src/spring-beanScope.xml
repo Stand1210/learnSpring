@@ -5,5 +5,7 @@
 
     <bean id="BeanScope" class="main.com.stand.BeanScope" scope="prototype"></bean>
 
+    <!--  切换上面scope的参数 分别为singleton和prototype  -->
+
 
 </beans>
