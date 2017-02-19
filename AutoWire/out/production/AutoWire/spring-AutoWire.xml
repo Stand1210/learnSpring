@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="constructor">
+
+    <!-- byName 如果找不到对应的名字会报NullPointer-->
+    <!-- byType 如果找不到对应的类型不会报错-->
+    <!-- consyructor 如果找不到对应的构造器会报错-->
+
+    <bean id = "AutoWritingService" class = "main.AutoWritingService"></bean>
+
+    <bean id = "autoWritingDAO" class = "main.AutoWritingDAO"></bean>
+</beans>
