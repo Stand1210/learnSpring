@@ -1,0 +1,6 @@
+
+asquid:S1226"@Introduce a new variable instead of reusing the parameter "arg".(þ¡Õöüÿÿÿÿ8çÆÉÐ¥+
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(¾±þòÿÿÿÿÿ8ÔÌ”Ð¥+
+Vsquid:S1213";Move this constructor to comply with Java Code Conventions.(Ñÿê~8º™îÐ¥+
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ö²ßÈÿÿÿÿÿ
