@@ -2,6 +2,7 @@ package com.stand.test;
 
 import com.stand.main.BeanInterface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -19,6 +20,10 @@ public class BeanInvoked {
 
     @Autowired
     private Map<String, BeanInterface> map;
+
+    @Autowired
+    @Qualifier(value = "beanImplTwo")
+    private BeanInterface beanInterface;
 
     public void say() {
         if(list != null && list.size() != 0) {
@@ -40,5 +45,9 @@ public class BeanInvoked {
         } else {
             System.out.println("Map<String, BeanInterface> map is null!!  &  map's size = " + map.size());
         }
+
+        System.out.println();
+
+        System.out.println(beanInterface.getClass().getName());
     }
 }
