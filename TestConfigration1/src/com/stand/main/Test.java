@@ -20,4 +20,15 @@ public class Test extends AbstractJUnit4SpringContextTests {
         Store stringStore = (Store) context.getBean("getStringStore");
         System.out.println(stringStore.getClass().getName());
     }
+
+    @org.junit.Test
+    public void testScope() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-config.xml");
+        Store stringStore = (Store) context.getBean("getStringStore");
+        System.out.println(stringStore.hashCode());
+
+        stringStore = (Store) context.getBean("getStringStore");
+        System.out.println(stringStore.hashCode());
+
+    }
 }
